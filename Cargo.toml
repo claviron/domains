@@ -20,7 +20,7 @@ tasks = ["claviron/tasks"]
 
 [dependencies]
 # Claviron facade
-claviron = { version = "0.2.0-alpha.26", path = "../../claviron", default-features = false, features = ["server", "hosting", "postgres", "clients"] }
+claviron = { version = "0.2.0-alpha.26", default-features = false, features = ["server", "hosting", "postgres", "clients"] }
 
 # always-on (used by registry trait + provider base)
 sqlx = { version = "0.9", features = ["runtime-tokio", "postgres", "uuid", "time"] }
